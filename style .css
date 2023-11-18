@@ -1,0 +1,176 @@
+/* Font-Faimly */
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2 {
+    font-family: Arial, Verdana, sans-serif;
+}
+    
+.credits {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Font-Size */
+
+/* Pixels */
+p{
+    font-size: 30px;
+}
+
+/* Percentages */
+p{
+    font-size: 500%;
+}
+
+/* Default Values */
+p{
+    font-size: xx-small;
+} */
+p{
+    font-size: 2em;
+}
+
+/* Font-Face */
+@font-face {
+    font-family: 'test';
+    src: url('./KdamThmorPro-Regular.ttf');
+}
+p{
+    font-family: test;
+}
+
+/* Font-Weight */
+p{
+    font-weight: 900px;
+}
+
+/* Font-Style */
+h1{
+    font-style: italic;
+}
+
+/* using id selector and comparing 3 styles */
+#Normal{
+    font-style: normal;
+}
+#Italic{
+    font-style: italic;
+}
+#Oblique{
+    font-style: oblique;
+}
+
+/* Text Transformation */
+ h1{
+    text-transform: capitalize ;
+} 
+h1{
+    text-transform: lowercase;
+} 
+
+/* Text-Decoration */
+#ul{
+    text-decoration: underline ;
+}
+#ol{
+    text-decoration: overline;
+}
+#lt{
+    text-decoration: line-through;
+}
+#blink{
+    text-decoration: blink;
+}
+
+/* Line Height/ Leading */
+p{
+    line-height: 10px;
+}
+
+/* Letter Word Spacing */
+h2{
+    word-spacing: 5px;
+}
+
+/* TExt Align */
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+/* Vertical Align */
+img{
+    vertical-align: middle;
+}
+
+/* Text-Indent */
+h1{
+    text-indent: 50px;
+}
+
+/* Text-Shadow */
+p{
+    background-color: #eeeeee;
+    color: #666666;
+    text-shadow: 1px 1px 0px red;
+}
+
+/* First Letter or First Line */
+p::first-letter{
+    color: red;
+}
+p::first-line{
+    color: maroon;
+}
+
+/* Styling Link */
+a:link{
+    color: green;
+}
+a:visited{
+    color: maroon;
+}
+
+/* Responding User */
+input.btn:focus{
+    background-color: blue;
+}
+input.tbox:focus{
+    background-color: black;
+    color: white;
+}
+
+/* Attribute Selector */
+/* Existense */
+h1[name]{
+    color: red;
+}
+
+/* Equality */
+h1[name="hi"]{
+    color: red;
+}
+
+/* Space */
+h1[class~="hello"]{
+    color: pink;
+}
+
+/* Prefix */
+h1[name^="d"]{
+    color: maroon;
+}
+
+/* SubString */
+h1[name*="ll"]{
+    color: red;
+}
+
+/* Suffix */
+h1[name$="e"]{
+    color: blue;
+}
